@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container header {
+  width: 100%;
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  color: white;
+}
+.container header .nav_bar {
+  width: 80%;
+  height: 40px;
+  display: flex;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container header .nav_bar a {
+  color: white;
+  font-size: 20px;
+  margin-left: 40px;
+}
+.container header .nav_bar ul {
+  width: 2%;
+  gap: 10px;
+  display: flex;
+  color: rgba(242, 244, 245, 0.802);
+}
+.container main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container main .intro {
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  justify-content: center;
+  gap: 20px;
+}
+.container main .intro .text {
+  width: 30%;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+.container main .intro .text_lorem {
+  width: 29%;
+  text-align: center;
+  font-size: 18px;
+  color: rgba(242, 244, 245, 0.802);
+}
+.container main .intro .buttons {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.container main .intro .buttons .first {
+  width: 120px;
+  height: 40px;
+  background-color: rgb(58, 55, 248);
+  border-radius: 13px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.container main .intro .buttons .second {
+  width: 120px;
+  height: 40px;
+  border-radius: 13px;
+  border: none;
+  cursor: pointer;
+}
+.container main .feature {
+  width: 80%;
+  height: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+.container main .feature .title {
+  width: 32%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.container main .feature .title .icon {
+  width: 64px;
+  height: 54px;
+  background-color: rgb(58, 55, 248);
+  border-radius: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container main .feature .title .icon .fa-paperclip {
+  font-size: 35px;
+  color: white;
+}
+.container main .feature .title .title_text {
+  font-weight: 500;
+  line-height: 1.2;
+}
+.container main .feature .title .action {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: rgb(58, 55, 248);
+}
+.container main .prices {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(242, 244, 245, 0.802);
+  border-top: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container main .prices .pay_text {
+  width: 25%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  gap: 15px;
+}
+.container main .prices .bottom_price {
+  width: 80%;
+  height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container main .prices .bottom_price .item {
+  width: 32%;
+  height: 100%;
+  border: 1px gray solid;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container main .prices .bottom_price .item .text_quantity {
+  width: 80%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #6c757d;
+}
+.container main .prices .bottom_price .item .text_quantity i {
+  color: #ffc107;
+  margin-right: 5px;
+}
+.container main .prices .bottom_price .item .price {
+  width: 80%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.container main .prices .bottom_price .item .price .dollar {
+  font-weight: 700 !important;
+  font-size: calc(1.475rem + 2.7vw);
+  line-height: 1.2;
+}
+.container main .prices .bottom_price .item .price .date {
+  color: #6c757d;
+}
+.container main .prices .bottom_price .item .opportunities {
+  width: 80%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container main .prices .bottom_price .item .opportunities ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.container main .prices .bottom_price .item .opportunities ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.container main .prices .bottom_price .item .opportunities ul li i {
+  color: #0d6efd;
+}
+.container main .prices .bottom_price .item button {
+  width: 80%;
+  height: 5vh;
+  margin-bottom: 18px;
+  border-radius: 13px;
+  border: 1px solid rgb(58, 55, 248);
+  background: none;
+}
+.container main .review {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container main .review .top_review {
+  width: 25%;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}

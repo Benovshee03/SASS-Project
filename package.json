@@ -1,0 +1,19 @@
+{
+  "name": "sassproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Benovshe Maharramova",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-sass": "^5.1.0"
+  },
+  "dependencies": {
+    "10": "^0.0.1",
+    "gulp": "^4.0.2",
+    "sass": "^1.69.5"
+  }
+}
