@@ -1,265 +1,353 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-$primary:white;
-$secondary:rgb(58, 55, 248);
+$primary: white;
+$secondary: rgb(58, 55, 248);
 $danger: rgba(242, 244, 245, 0.802);
 $warning: black;
 
-
-
 $base-border-radius: 13px;
 
+.container {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  header {
+    width: 100%;
+    display: flex;
+    background-color: $warning;
+    justify-content: space-between;
+    color: $primary;
+    .nav_bar {
+      width: 80%;
+      height: 40px;
+      display: flex;
+      color: $primary;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-.container{
-    max-width: 100%;
+      a {
+        color: $primary;
+        font-size: 20px;
+        margin-left: 40px;
+      }
+      ul {
+        width: 2%;
+        gap: 10px;
+        display: flex;
+        color: $danger;
+      }
+    }
+  }
+  main {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    header{
-        width: 100%;
-        display: flex;
-    background-color: $warning;
-        justify-content: space-between;
+    .intro {
+      height: 550px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: $warning;
+
+      justify-content: center;
+      gap: 20px;
+      .text {
+        width: 30%;
+        text-align: center;
+        font-size: 40px;
         color: $primary;
-        .nav_bar{
-            width: 80%;
-            height: 40px;
-            display: flex;
-            color: $primary;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            a{
-                color: $primary;
-                font-size: 20px;
-                margin-left: 40px;
-            }
-            ul{
-                width: 2%;
-                gap: 10px;
-                display: flex;
-                color: $danger;
-           
-            }
+      }
+      .text_lorem {
+        width: 29%;
+        text-align: center;
+        font-size: 18px;
+        color: $danger;
+      }
+      .buttons {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        .first {
+          width: 120px;
+          height: 40px;
+          background-color: $secondary;
+          border-radius: $base-border-radius;
+          color: $primary;
+          border: none;
+          cursor: pointer;
         }
-
-    }        main{
-        width: 100%;
+        .second {
+          width: 120px;
+          height: 40px;
+          border-radius: $base-border-radius;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+    .feature {
+      width: 80%;
+      height: 550px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      .title {
+        width: 32%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        .icon {
+          width: 64px;
+          height: 54px;
+          background-color: $secondary;
+          border-radius: $base-border-radius;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .fa-paperclip {
+            font-size: 35px;
+            color: $primary;
+          }
+        }
+        .title_text {
+          font-weight: 500;
+          line-height: 1.2;
+        }
+        .action {
+          width: 100%;
+          height: 20px;
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          color: $secondary;
+        }
+      }
+    }
+    .prices {
+      width: 100%;
+      height: 100vh;
+      background-color: $danger;
+      border-top: 1px solid gray;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .pay_text {
+        width: 25%;
+        height: 30vh;
         display: flex;
         flex-direction: column;
         align-items: center;
-        .intro{
-            height: 550px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        background-color: $warning;
-    
-            justify-content: center;
-            gap: 20px;
-            .text{
-                width: 30%;
-                text-align: center;
-                font-size: 40px;
-                color: $primary;
-            }
-            .text_lorem{
-                width: 29%;
-                text-align: center;
-                font-size: 18px;
-                color: $danger;
-            }
-            .buttons{
-                width: 20%;
-                display: flex;
-                justify-content: center;
-                gap: 20px;
-                .first{
-                    width: 120px;
-                    height: 40px;
-                    background-color: $secondary;
-                    border-radius: $base-border-radius;
-                    color: $primary;
-                    border: none;
-                    cursor: pointer;
-    
-                }
-                .second{
-                    width: 120px;
-                    height: 40px;
-                    border-radius: $base-border-radius;
-                    border: none;
-                    cursor: pointer;
-    
-                }
-            }
-        }
-        .feature{
+        justify-content: center;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.2;
+        gap: 15px;
+      }
+      .bottom_price {
+        width: 80%;
+        height: 60vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .item {
+          width: 32%;
+          height: 100%;
+          border: 1px gray solid;
+          border-radius: $base-border-radius;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .text_quantity {
             width: 80%;
-            height: 550px;
+            height: 5vh;
             display: flex;
-            flex-wrap: wrap;
             align-items: center;
-            gap: 10px;
-            .title{
-                width: 32%;
-                height: 300px;
-                display: flex;
-                flex-direction: column;
-                gap: 14px;
-                .icon{
-                    width: 64px;
-                    height: 54px;
-                    background-color: $secondary;
-                    border-radius: $base-border-radius;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    .fa-paperclip{
-                        font-size: 35px;
-                        color: $primary;
-                    }
-                }
-                .title_text{
-                    font-weight: 500;
-                    line-height: 1.2;
-                }
-                .action{
-                    width: 100%;
-                    height: 20px;
-                    display: flex;
-                    align-items: center;
-                    gap: 15px;
-                    color: $secondary;
-                }
+            text-transform: uppercase;
+            color: #6c757d;
+            i {
+              color: #ffc107;
+              margin-right: 5px;
             }
-        }
-        .prices{
-            width: 100%;
-            height: 100vh;
-            background-color: $danger;
-            border-top: 1px solid gray;
+          }
+          .price {
+            width: 80%;
+            height: 10vh;
             display: flex;
-            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            .dollar {
+              font-weight: 700 !important;
+              font-size: calc(1.475rem + 2.7vw);
+              line-height: 1.2;
+            }
+            .date {
+              color: #6c757d;
+            }
+          }
+          .opportunities {
+            width: 80%;
+            height: 40vh;
+            display: flex;
             align-items: center;
             justify-content: center;
-            .pay_text{
-                width: 25%;
-                height: 30vh;
+            ul {
+              width: 100%;
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              gap: 15px;
+              li {
                 display: flex;
-                flex-direction: column;
                 align-items: center;
-                justify-content: center;
-                font-weight: 500;
-                font-size: 24px;
-                line-height: 1.2;
-                gap: 15px;
-            }
-            .bottom_price{
-                width: 80%;
-                height: 60vh;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                .item{
-                    width: 32%;
-                    height: 100%;
-                    border: 1px gray solid;
-                    border-radius:$base-border-radius ;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    .text_quantity{
-                        width: 80%;
-                        height: 5vh;
-                        display: flex;
-                        align-items: center;
-                        text-transform: uppercase;
-                        color: #6c757d ;
-                        i{
-                            color: #ffc107;
-                            margin-right: 5px;
-                        }
-                    }
-                    .price{
-                        width: 80%;
-                        height: 10vh;
-                        display: flex;
-                        align-items: center;
-                        gap: 5px;
-                        .dollar{
-                            font-weight: 700 !important;
-                            font-size: calc(1.475rem + 2.7vw);
-                            line-height: 1.2
-                        }
-                        .date{
-                            color: #6c757d;
-                        }
-                    }
-                    .opportunities{
-                        width: 80%;
-                        height: 40vh;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        ul{
-                            width: 100%;
-                            height: 100%;
-                            display: flex;
-                            flex-direction: column;
-                            gap: 15px;
-                            li{
-                                display: flex;
-                                align-items: center;
-                                gap: 5px;
-                                i{
-                                    color: #0d6efd ;
-                                }
-                            }
-                        }
-                    }
-                    button{
-                        width: 80%;
-                        height: 5vh;
-                        margin-bottom: 18px;
-                        border-radius: $base-border-radius;
-                        border: 1px solid $secondary;
-                        background: none;
-                    }
+                gap: 5px;
+                i {
+                  color: #0d6efd;
                 }
+              }
             }
+          }
+          button {
+            width: 80%;
+            height: 5vh;
+            margin-bottom: 18px;
+            border-radius: $base-border-radius;
+            border: 1px solid $secondary;
+            background: none;
+          }
         }
-        .review{
+      }
+    }
+    .review {
+      width: 100%;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .top_review {
+        width: 25%;
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+      }
+      .bottom_review {
+        width: 40%;
+        height: 40vh;
+        .items {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+          .item {
             width: 100%;
-            height: 70vh;
+            height: 20vh;
+            border: 1px solid rgb(203, 197, 197);
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            .icon {
+              width: 20%;
+              height: 20vh;
+              margin-top: 10px;
+              margin-left: 10px;
+              i {
+                color: #0d6efd;
+                font-size: 38px;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+              }
+            }
+            .texts {
+              width: 100%;
+              height: 20vh;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              div{
+                width: 90%;
+                height: 10vh;
+                margin-top: 10px;
+            }
+            }
+          }
+        }
+      }
+    }
+    .form{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color:rgba(242, 244, 245, 0.802);
+        .top{
+            width: 20%;
+            height: 30vh;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            .top_review{
-                width: 25%;
-                height: 15vh;
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-                text-align: center;
+            gap: 20px;
+            .icon i{
+                font-size: 74px;
+                color: #0d6efd;
             }
-            .bottom_review{
-                
+            .touch{
+                font-size: 35px;
+            }
+        }
+        form{
+            width: 40%;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            #name ,#addres , #number {
+                width: 100%;
+                height: 6vh;
+                text-indent: 10px;
+                border-radius: 8px;
+                border: 1px solid gainsboro;
+            } 
+            #message{
+                width: 100%;
+                height: 15vh;
+                text-indent: 10px;
+                border-radius: 8px;
+                border: 1px solid gainsboro;
+            }
+            button{
+                width: 100%;
+                height: 6vh;
+                border-radius: 8px;
+                background-color: #0d6efd;
+                border: none;
+                color: white;
+                font-size: 21px;
             }
         }
     }
+  }
 }
-
-
-
-

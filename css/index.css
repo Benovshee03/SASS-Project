@@ -240,3 +240,104 @@
   gap: 10px;
   text-align: center;
 }
+.container main .review .bottom_review {
+  width: 40%;
+  height: 40vh;
+}
+.container main .review .bottom_review .items {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.container main .review .bottom_review .items .item {
+  width: 100%;
+  height: 20vh;
+  border: 1px solid rgb(203, 197, 197);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+.container main .review .bottom_review .items .item .icon {
+  width: 20%;
+  height: 20vh;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.container main .review .bottom_review .items .item .icon i {
+  color: #0d6efd;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+.container main .review .bottom_review .items .item .texts {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container main .review .bottom_review .items .item .texts div {
+  width: 90%;
+  height: 10vh;
+  margin-top: 10px;
+}
+.container main .form {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(242, 244, 245, 0.802);
+}
+.container main .form .top {
+  width: 20%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.container main .form .top .icon i {
+  font-size: 74px;
+  color: #0d6efd;
+}
+.container main .form .top .touch {
+  font-size: 35px;
+}
+.container main .form form {
+  width: 40%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container main .form form #name, .container main .form form #addres, .container main .form form #number {
+  width: 100%;
+  height: 6vh;
+  text-indent: 10px;
+  border-radius: 8px;
+  border: 1px solid gainsboro;
+}
+.container main .form form #message {
+  width: 100%;
+  height: 15vh;
+  text-indent: 10px;
+  border-radius: 8px;
+  border: 1px solid gainsboro;
+}
+.container main .form form button {
+  width: 100%;
+  height: 6vh;
+  border-radius: 8px;
+  background-color: #0d6efd;
+  border: none;
+  color: white;
+  font-size: 21px;
+}
